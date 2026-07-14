@@ -1,8 +1,7 @@
-const Carrito = require("./Carrito.js")
-const Usuario = require("./Usuario.js")
-const Producto = require("./Producto.js")
-
-const { esEmailValido } = require("./utilidades.js")
+import Carrito from "./Carrito.js"
+import Producto from "./Producto.js"
+import Usuario from "./Usuario.js"
+import { esEmailValido } from "./utilidades.js"
 
 const app = (usuario, productos) => {
   if (!esEmailValido(usuario.email)) {

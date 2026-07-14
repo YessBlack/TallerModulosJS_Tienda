@@ -1,4 +1,4 @@
-const { calcularDescuento, formatearPrecio } = require("./utilidades.js")
+import { calcularDescuento, formatearPrecio } from "./utilidades.js"
 
 class Carrito {
   constructor(usuario) {
@@ -52,4 +52,4 @@ TOTAL: ${formatearPrecio(this.total())}
   }
 }
 
-module.exports = Carrito
+export default Carrito
