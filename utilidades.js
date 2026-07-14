@@ -1,4 +1,4 @@
-const precioFormateado = (precio) => {
+const formatearPrecio = (precio) => {
   return precio.toLocaleString('es-CO', {
     style: 'currency',
     currency: 'COP'
@@ -14,7 +14,7 @@ const calcularDescuento = (precio, porcentaje) => {
 }
 
 module.exports = {
-  precioFormateado,
+  formatearPrecio,
   esEmailValido,
   calcularDescuento
 }
