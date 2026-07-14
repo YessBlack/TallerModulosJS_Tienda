@@ -14,6 +14,7 @@ class Producto {
     const estadoStock = this.stock > 0
       ? `${this.stock} unidades disponibles`
       : 'Sin stock'
+
     return `${this.nombre}
       - Categoría: ${this.categoria}
       - Precio: ${this.precio}
